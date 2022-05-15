@@ -1,0 +1,105 @@
+.jogo>ul>li{
+    background-color: brown;
+    height: 4.5em;
+    width: 4.5em;
+    /* padding: 1.5em; */
+    border: black 1px solid;
+}
+
+.jogo{
+    height: 4.5em;
+    width: 4.5em;
+    margin-bottom: 1em;
+}
+
+.jogo-casas-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.casa{
+    display: flex;
+    justify-content: start;
+    
+}
+
+    #casa1 { grid-area: 12 / 1 / 13 / 2; }
+    #casa2 { grid-area: 12 / 2 / 13 / 3; }
+    #casa3 { grid-area: 12 / 3 / 13 / 4; }
+    #casa4 { grid-area: 12 / 4 / 13 / 5; }
+    #casa5 { grid-area: 12 / 5 / 13 / 6; }
+    #casa6 { grid-area: 11 / 5 / 12 / 6; }
+    #casa7 { grid-area: 10 / 5 / 11 / 6; }
+    #casa8 { grid-area: 10 / 4 / 11 / 5; }
+    #casa9 { grid-area: 10 / 3 / 11 / 4; }
+    #casa10 { grid-area: 10 / 2 / 11 / 3; }
+    #casa11 { grid-area: 10 / 1 / 11 / 2; }
+    #casa12 { grid-area: 9 / 1 / 10 / 2; }
+    #casa13 { grid-area: 8 / 1 / 9 / 2; }
+    #casa14 { grid-area: 8 / 2 / 9 / 3; }
+    #casa15 { grid-area: 8 / 3 / 9 / 4; }
+    #casa16 { grid-area: 8 / 4 / 9 / 5; }
+    #casa17 { grid-area: 8 / 5 / 9 / 6; }
+    #casa18 { grid-area: 8 / 6 / 9 / 7; }
+    #casa19 { grid-area: 8 / 7 / 9 / 8; }
+    #casa20 { grid-area: 9 / 7 / 10 / 8; }
+    #casa21 { grid-area: 10 / 7 / 11 / 8; }
+    #casa22 { grid-area: 11 / 7 / 12 / 8; }
+    #casa23 { grid-area: 12 / 7 / 13 / 8; }
+    #casa24 { grid-area: 12 / 8 / 13 / 9; }
+    #casa25 { grid-area: 12 / 9 / 13 / 10; }
+    #casa26 { grid-area: 11 / 9 / 12 / 10; }
+    #casa27 { grid-area: 10 / 9 / 11 / 10; }
+    #casa28 { grid-area: 9 / 9 / 10 / 10; }
+    #casa29 { grid-area: 8 / 9 / 9 / 10; }
+    #casa30 { grid-area: 8 / 10 / 9 / 11; }
+    #casa31 { grid-area: 8 / 11 / 9 / 12; }
+    #casa32 { grid-area: 9 / 11 / 10 / 12; }
+    #casa33 { grid-area: 10 / 11 / 11 / 12; }
+    #casa34 { grid-area: 11 / 11 / 12 / 12; }
+    #casa35 { grid-area: 12 / 11 / 13 / 12; }
+    #casa36 { grid-area: 12 / 12 / 13 / 13; }
+    #casa37 { grid-area: 11 / 12 / 12 / 13; }
+    #casa38 { grid-area: 10 / 12 / 11 / 13; }
+    #casa39 { grid-area: 9 / 12 / 10 / 13; }
+    #casa40 { grid-area: 8 / 12 / 9 / 13; }
+    #casa41 { grid-area: 7 / 12 / 8 / 13; }
+    #casa42 { grid-area: 6 / 12 / 7 / 13; }
+    #casa43 { grid-area: 6 / 11 / 7 / 12; }
+    #casa44 { grid-area: 6 / 10 / 7 / 11; }
+    #casa45 { grid-area: 6 / 9 / 7 / 10; }
+    #casa46 { grid-area: 6 / 8 / 7 / 9; }
+    #casa47 { grid-area: 6 / 7 / 7 / 8; }
+    #casa48 { grid-area: 6 / 6 / 7 / 7; }
+    #casa49 { grid-area: 6 / 5 / 7 / 6; }
+    #casa50 { grid-area: 6 / 4 / 7 / 5; }
+    #casa51 { grid-area: 6 / 3 / 7 / 4; }
+    #casa52 { grid-area: 6 / 2 / 7 / 3; }
+    #casa53 { grid-area: 6 / 1 / 7 / 2; }
+    #casa54 { grid-area: 5 / 1 / 6 / 2; }
+    #casa55 { grid-area: 4 / 1 / 5 / 2; }
+    #casa56 { grid-area: 4 / 2 / 5 / 3; }
+    #casa57 { grid-area: 4 / 3 / 5 / 4; }
+    #casa58 { grid-area: 4 / 4 / 5 / 5; }
+    #casa59 { grid-area: 4 / 5 / 5 / 6; }
+    #casa60 { grid-area: 4 / 6 / 5 / 7; }
+    #casa61 { grid-area: 4 / 7 / 5 / 8; }
+    #casa62 { grid-area: 4 / 8 / 5 / 9; }
+    #casa63 { grid-area: 4 / 9 / 5 / 10; }
+    #casa64 { grid-area: 4 / 10 / 5 / 11; }
+    #casa65 { grid-area: 4 / 11 / 5 / 12; }
+    #casa66 { grid-area: 4 / 12 / 5 / 13; }
+    #casa67 { grid-area: 3 / 12 / 4 / 13; }
+    #casa68 { grid-area: 2 / 12 / 3 / 13; }
+    #casa69 { grid-area: 2 / 11 / 3 / 12; }
+    #casa70 { grid-area: 2 / 10 / 3 / 11; }
+    #casa71 { grid-area: 2 / 9 / 3 / 10; }
+    #casa72 { grid-area: 2 / 8 / 3 / 9; }
+    #casa73 { grid-area: 2 / 7 / 3 / 8; }
+    #casa74 { grid-area: 2 / 6 / 3 / 7; }
+    #casa75 { grid-area: 2 / 5 / 3 / 6; }
+    #casa76 { grid-area: 2 / 4 / 3 / 5; }
+    #casa77 { grid-area: 2 / 3 / 3 / 4; }
+    #casa78 { grid-area: 2 / 2 / 3 / 3; }
+    #casa79 { grid-area: 2 / 1 / 3 / 2; }
