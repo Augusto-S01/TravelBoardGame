@@ -20,6 +20,7 @@
     if(!isset($_COOKIE['inicio'])){
         setcookie("jogador1", 1,time() + (30 * 24 * 3600),"/");
         setcookie("jogador2", 1,time() + (30 * 24 * 3600),"/");
+        setcookie("rodada", 1,time() + (30 * 24 * 3600),"/");
         setcookie("inicio", true);
         echo ("<script> console.log('teste')</script>");
     }
@@ -50,15 +51,24 @@
     <div class="jogo-rodada-container">
         <div class="jogo-rodada">
             <h2 class="jogo-rodada__titulo">Rodada</h2>
-            <p class="jogo-rodada__numero">1</p>
+            <?php echo("<p class='jogo-rodada__numero'>".$_COOKIE['rodada']."</p>"); ?>
 
-            <form action="actions/dado1.php" method="post">
-                <input class="jogo-rodada__botao" type="submit" value="Jogar1">
+            <p>
+            <?php 
+                if($_COOKIE['jogador1'] == 79 && $_COOKIE['jogador2'] == 79){
+                    echo("<p class='jogo-rodada__vencedor'>Empate, ambos os jogadores Venceram!</p>");
+                }else if($_COOKIE['jogador1'] == 79){
+                    echo("<p class='jogo-rodada__vencedor'>Parabens jogador 1 você ganhou!</p>");
+                }else if($_COOKIE['jogador2'] == 79){
+                    echo("<p class='jogo-rodada__vencedor'>Parabens jogador 2 você ganhou!</p>");
+                }else{
+                    echo('<form action="actions/dado1.php" method="post"><input class="jogo-rodada__botao" type="submit" value="Jogar Dados"></form>');
+                }
+            ?>
+            <form action="index.php" method="get"><input class="jogo-rodada__botao" type="submit" value="Voltar ao menu"></form>
+            <form action="actions/reset.php" method="post">
+                <input class="jogo-rodada__botao-reset" type="submit" value="Resetar Jogo">
             </form>
-            <form action="actions/dado2.php" method="post">
-                <input class="jogo-rodada__botao" type="submit" value="Jogar2">
-            </form>
-            
         </div>
 
 </div>

@@ -8,11 +8,6 @@
     }
     $_COOKIE['jogador2'] = $casaAtual;
     setcookie("jogador2", $casaAtual ,time() + (30 * 24 * 3600),"/");
-    echo("<script> console.log('".$_COOKIE['jogador2']."')</script>");
-    echo("<script> console.log('".$_COOKIE['jogador2']."')</script>");
     header("Location: ../jogo.php");
-
-
-
 
 ?>

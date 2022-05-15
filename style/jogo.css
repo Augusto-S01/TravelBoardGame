@@ -1,3 +1,7 @@
+body{
+    overflow-y: hidden;
+}
+
 .jogo>ul>li{
     background-image:url("../assets/Sprite-0006.png");
     height: 3.5em;
@@ -45,6 +49,14 @@
     
 }
 
+.jogo-rodada__vencedor{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    font-size: 2em;
+    border:#cbbb21 1px solid;
+}
+
 .jogo-rodada-container{
     display: flex;
     flex-direction: column;
@@ -55,6 +67,43 @@
     background-color: #26252591;
     
 }
+
+.jogo-rodada__botao{
+    margin-top: 2em;
+    background-color: rgb(0 0 0 / 36%);
+    padding: 0.3em 1.2em;
+    border-radius: 19px;
+    color: rgb(214 194 15);
+    text-shadow: 0px 2px 10px rgb(114 45 24);
+    -webkit-text-stroke: 1px rgb(114, 45, 24);
+    font-size: 27px;
+    font-family: 'Macondo',cursive;
+    border: #cbbb21 solid 4px;
+    letter-spacing: 3px;
+    transition: filter 2s, box-shadow 2s;
+}
+
+.jogo-rodada__botao-reset{
+    margin-top: 1em;
+    background-color: rgb(0 0 0 / 36%);
+    padding: 0.3em 1.2em;
+    border-radius: 19px;
+    color: rgb(226, 58, 7);
+    text-shadow: 0px 2px 10px rgb(114 45 24);
+    -webkit-text-stroke: 1px rgb(114, 45, 24);
+    font-size: 27px;
+    font-family: 'Macondo',cursive;
+    border: #cbbb21 solid 4px;
+    letter-spacing: 3px;
+    transition: filter 2s, box-shadow 2s;
+}
+
+.jogo-rodada__botao-reset:hover{
+    box-shadow: inset 0 0 5px rgba(255,255,255, .3), 0 0 50px rgb(226, 58, 7);
+    filter: brightness(150%);
+    transform: scale(1.2);
+}
+
 
 
 
