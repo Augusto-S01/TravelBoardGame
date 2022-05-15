@@ -50,8 +50,7 @@
 
     <div class="jogo-rodada-container">
         <div class="jogo-rodada">
-            <h2 class="jogo-rodada__titulo">Rodada</h2>
-            <?php echo("<p class='jogo-rodada__numero'>".$_COOKIE['rodada']."</p>"); ?>
+
 
             <p>
             <?php 
@@ -62,7 +61,8 @@
                 }else if($_COOKIE['jogador2'] == 79){
                     echo("<p class='jogo-rodada__vencedor'>Parabens jogador 2 você ganhou!</p>");
                 }else{
-                    echo('<form action="actions/dado1.php" method="post"><input class="jogo-rodada__botao" type="submit" value="Jogar Dados"></form>');
+                    echo('<form action="actions/dado1.php" method="post"><input class="jogo-rodada__botao" type="submit" value="Jogar Dado jogador 1"></form>');
+                    echo('<form action="actions/dado2.php" method="post"><input class="jogo-rodada__botao" type="submit" value="Jogar Dado jogador 2"></form>');
                 }
             ?>
             <form action="index.php" method="get"><input class="jogo-rodada__botao" type="submit" value="Voltar ao menu"></form>
