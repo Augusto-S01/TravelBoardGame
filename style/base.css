@@ -5,10 +5,7 @@ body{
     background-attachment:fixed;
     background-position:center;
     backdrop-filter: opacity(100%);
-
     backdrop-filter: hue-rotate(45deg);
-
-
     color:white;
     font-family: 'Roboto', sans-serif;
 }
@@ -20,13 +17,13 @@ main{
     justify-content: center;
 }
 
-
 .titulo-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .titulo__h1{
     position: relative;
     font-family: 'Macondo', cursive;
@@ -35,8 +32,6 @@ main{
     text-shadow: 2px 2px 10px rgb(114 45 24);
     -webkit-text-stroke: 2px rgb(114, 45, 24);
     top: 2.5em;
-
-
 }
 
 .jogar>a{
@@ -45,22 +40,17 @@ main{
 
 .jogar__botao{
     background-color: rgb(0 0 0 / 36%);
-
     padding: 0.3em 1.2em;
     border-radius: 19px;
     color: rgb(214 194 15);
     text-shadow: 0px 2px 10px rgb(114 45 24);
     -webkit-text-stroke: 1px rgb(114, 45, 24);
-    font-size: 47px;
+    font-size: 70px;
     font-family: 'Macondo',cursive;
-    border: #3b8b4d solid 4px;
+    border: rgb(214 194 15) 4px solid;
     letter-spacing: 3px;
-    transition: filter 2s, box-shadow 2s;
+    transition: filter 1s, box-shadow 1s;
     /* transition: box-shadow 1s; */
-}
-.jogar__botao:hover{
-    box-shadow: inset 0 0 5px rgba(255,255,255, .3), 0 0 50px #3b8b4d;
-    filter: brightness(150%);
 }
 
 .jogar__login{
@@ -69,7 +59,6 @@ main{
     color: #fff;
     margin-top: 0.5em;
 }
-
 
 .sobre{
     margin-top: 20em;
@@ -90,14 +79,15 @@ main{
     width: 100%;
 }
 
-.sobre__titulo{
+.sobre__titulo, .login__titulo, .cadastro__titulo{
     position: relative;
     font-family: 'Macondo', cursive;
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     color: rgb(214, 194, 15);
     text-shadow: 2px 2px 10px rgb(114 45 24);
     -webkit-text-stroke: 1px rgb(114, 45, 24);
+    margin: 30px;
 }
 
 .sobre__textarea{
@@ -134,7 +124,7 @@ main{
     background-color: rgb(0 0 0 / 36%);
     padding: 0.3em 1.2em;
     border-radius: 19px;
-    color: rgb(214 194 15);
+    color: #cb2121;
     text-shadow: 0px 2px 10px rgb(114 45 24);
     -webkit-text-stroke: 1px rgb(114, 45, 24);
     font-size: 27px;
@@ -143,3 +133,53 @@ main{
     letter-spacing: 3px;
     transition: filter 2s, box-shadow 2s;
 }
+
+.login__main, .cadastro__main{
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
+.login__form, .cadastro__form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.login__form input, .cadastro__form input{
+    background-color: rgb(0 0 0 / 36%);
+    padding: .4em 2em;
+    border: rgb(214 194 15) solid 4px;
+    border-radius: 19px;
+    justify-content: space-around;
+    font-family: 'Macondo',cursive;
+    color: #fff;
+    font-size: 25px;
+}
+
+.login__form label, .cadastro__form label{
+    font-size: 35px;
+    font-family: 'Macondo',cursive;
+    color: rgb(214 194 15);
+    -webkit-text-stroke: 1px rgb(114, 45, 24);
+    margin: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    font-family: 'Roboto', sans-serif;
+}
+
+#cadastro__botao, #login__botao{
+    font-size: 35px;
+    color: rgb(214 194 15);
+    -webkit-text-stroke: 1px rgb(114, 45, 24);
+    margin-top: 2em;
+    transition: filter 1s, box-shadow 1s;
+}
+
+.jogar__botao:hover, .deslogar__botao:hover, .cadastro__botao:hover, .login__botao:hover{
+    box-shadow: inset 0 0 5px rgba(255,255,255, .3), 0 0 50px rgb(214 194 15);
+    filter: brightness(150%);
+    transform: scale(1.2);
+}
+
