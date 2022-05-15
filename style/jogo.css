@@ -1,15 +1,36 @@
 .jogo>ul>li{
-    background-color: brown;
-    height: 4.5em;
-    width: 4.5em;
+    background-image:url("../assets/Sprite-0006.png");
+    height: 3.5em;
+    width: 3.5em;
     /* padding: 1.5em; */
     border: black 1px solid;
 }
-
+.jogador1{
+    background-color: rgb(194, 81, 81) ;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.jogador2{
+    background-color: rgb(36, 26, 121) ;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
 .jogo{
-    height: 4.5em;
-    width: 4.5em;
+    display: flex;
+    height: 3.5em;
+    width: 3.5em;
     margin-bottom: 1em;
+    padding-bottom: 10em;
+
+
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+    justify-content: space-around;
+    background-color: #2625258f;
 }
 
 .jogo-casas-container {
@@ -23,6 +44,39 @@
     justify-content: start;
     
 }
+
+.jogo-rodada-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    padding: 1em;
+    width: 25%;
+    background-color: #26252591;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     #casa1 { grid-area: 12 / 1 / 13 / 2; }
     #casa2 { grid-area: 12 / 2 / 13 / 3; }

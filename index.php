@@ -30,7 +30,7 @@
             session_start();
             if(isset($_SESSION['usuario'])){
                 
-                echo ("<div class='jogar'> <input class='jogar__botao' type='button' value='jogar'> </div>");
+                echo ("<div class='jogar'><a href='jogo.php'> <input class='jogar__botao' type='button' value='jogar'></a> </div>");
             }else{
                 echo('<div class="jogar"><a href="cadastro.php"><input class="jogar__botao" type="button" value="faça seu cadastro para jogar"></a><a href="login.php"><h3 class="jogar__login">ja possui cadastro?</h3></a></div>');
             }
