@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/jogo.css">
     <link rel="stylesheet" href="style/base.css">
@@ -15,7 +14,6 @@
 
 <?php
     session_start();
-
 
     if(!isset($_COOKIE['inicio'])){
         setcookie("jogador1", 1,time() + (30 * 24 * 3600),"/");
@@ -49,11 +47,34 @@
     </ul>
 
     <div class="jogo-rodada-container">
+        
         <div class="jogo-rodada">
+            <?php
+                
+                switch ($_COOKIE['dado']) {
+                    case 1:
+                        echo "<img class='dado__img' src='./imagens/1_dot.png' alt='Dado de 1 ponto'>";
+                        break;
+                    case 2:
+                        echo "<img class='dado__img' src='./imagens/2_dots.png' alt='Dado de 2 pontos'>";
+                        break;
+                    case 3:
+                        echo "<img class='dado__img' src='./imagens/3_dots.png' alt='Dado de 3 pontos'>";
+                        break;
+                    case 4:
+                        echo "<img class='dado__img' src='./imagens/4_dots.png' alt='Dado de 4 pontos'>";
+                        break;
+                    case 5:
+                        echo "<img class='dado__img' src='./imagens/5_dots.png' alt='Dado de 5 pontos'>";
+                        break;
+                    case 6:
+                        echo "<img class='dado__img' src='./imagens/6_dots.png' alt='Dado de 6 pontos'>";
+                        break;
+                    default:
+                        echo "<img class='dado__img' src='./imagens/1_dot.png' alt='Dado de 1 ponto'>";
+                        break;
+                }
 
-
-            <p>
-            <?php 
                 if($_COOKIE['jogador1'] == 79 && $_COOKIE['jogador2'] == 79){
                     echo("<p class='jogo-rodada__vencedor'>Empate, ambos os jogadores Venceram!</p>");
                 }else if($_COOKIE['jogador1'] == 79){
@@ -63,7 +84,7 @@
                 }else{
                     echo('<form action="actions/dado1.php" method="post"><input class="jogo-rodada__botao" type="submit" value="Jogar Dado jogador 1"></form>');
                     echo('<form action="actions/dado2.php" method="post"><input class="jogo-rodada__botao" type="submit" value="Jogar Dado jogador 2"></form>');
-                }
+                }                
             ?>
             <form action="index.php" method="get"><input class="jogo-rodada__botao" type="submit" value="Voltar ao menu"></form>
             <form action="actions/reset.php" method="post">
