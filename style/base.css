@@ -1,11 +1,9 @@
 body{
-    background-image:url(../imagens/background.jpg);
+    background-image:url(../imagens/background.jpg);z
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment:fixed;
     background-position:center;
-    backdrop-filter: opacity(100%);
-    backdrop-filter: hue-rotate(45deg);
     color:white;
     font-family: 'Roboto', sans-serif;
 }
@@ -54,22 +52,25 @@ main{
 }
 
 .jogar__login{
+    text-align: center;
     text-decoration: none;
-    text-decoration: none;
+    font-size: 35px;
+    font-family: 'Macondo',cursive;
+    text-shadow: 2px 2px 3px #000;
     color: #fff;
     margin-top: 0.5em;
 }
 
 .sobre{
-    margin-top: 20em;
+    margin: 20em 0 5em 0;
     width: 100%;
     height: 21em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+    justify-content: center;    
 }
+
 .sobre>form{
     display: flex;
     flex-direction: column;
@@ -87,7 +88,7 @@ main{
     color: rgb(214, 194, 15);
     text-shadow: 2px 2px 10px rgb(114 45 24);
     -webkit-text-stroke: 1px rgb(114, 45, 24);
-    margin: 30px;
+    margin: 15px;
 }
 
 .sobre__textarea{
@@ -116,7 +117,7 @@ main{
 }
 
 .deslogar{
-    margin-top: 5em;
+    margin:5em 0 5em 0;
 }
 
 .deslogar__botao{
@@ -165,7 +166,7 @@ main{
     margin: 10px;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"]{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -177,9 +178,18 @@ input[type="text"], input[type="password"] {
     transition: filter 1s, box-shadow 1s;
 }
 
-.jogar__botao:hover, .deslogar__botao:hover, .cadastro__botao:hover, .login__botao:hover{
+.jogo-rodada-container{
+    height: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.jogo-rodada__botao{
+    transition: filter 1s, box-shadow 1s;
+}
+
+.jogar__botao:hover, .deslogar__botao:hover, .cadastro__botao:hover, .login__botao:hover, .jogo-rodada__botao:hover{
     box-shadow: inset 0 0 5px rgba(255,255,255, .3), 0 0 50px rgb(214 194 15);
     filter: brightness(150%);
     transform: scale(1.2);
 }
-
